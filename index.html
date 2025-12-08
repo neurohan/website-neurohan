@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuroscience & Research - [Rohan Jagirdar, Ph.D.]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #65d1ff;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 1.5rem;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav button {
+            background: none;
+            border: none;
+            color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+        nav button:hover {
+            background-color: #666;
+            transform: scale(1.1);
+        }
+        .tab-content {
+            display: none;
+            padding: 30px;
+            border-top: 2px solid #ddd;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .active {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rohan Jagirdar, Ph.D.</h1>
+        <p>Bridging Neuroscience, Medicine, and Public Education</p>
+    </header>
+    
+    <nav>
+        <button onclick="openTab('home')">Home</button>
+        <button onclick="openTab('news')">Research News</button>
+        <button onclick="openTab('articles')">Articles</button>
+        <button onclick="openTab('blog')">Blog</button>
+        <button onclick="openTab('kids')">Neuroscience for Kids</button>
+        <button onclick="openTab('about')">About Me</button>
+        <button onclick="openTab('contact')">Contact</button>
+    </nav>
+
+    <section id="home" class="tab-content active">
+        <h2>Welcome to My Website</h2>
+        <p>Explore the latest in neuroscience, my published works, and fun resources for kids!</p>
+    </section>
+    
+    <section id="news" class="tab-content">
+    	<h2>Latest Research News</h2>
+    	<div id="news">Loading...</div>
+    </section>
+
+    <section id="articles" class="tab-content">
+        <h2>Articles & Publications</h2>
+        <p>Browse my peer-reviewed papers, opinion pieces, and industry insights.</p>
+    </section>
+
+    <section id="blog" class="tab-content">
+    	<h2>Blog</h2>
+    	<div id="blog">Loading...</div>
+    </section>
+
+    <section id="kids" class="tab-content">
+        <h2>Neuroscience for Kids</h2>
+        <p>Fun activities, brain facts, and interactive learning for young minds.</p>
+    </section>
+
+    <section id="about" class="tab-content">
+        <h2>About Me</h2>
+        <p>[Your Bio, Research, and Professional Journey]</p>
+    </section>
+
+    <section id="contact" class="tab-content">
+        <h2>Contact</h2>
+        <p>Email: rmjagirdar@gmail.com</p>
+        <p>Socials: <a href="#">LinkedIn</a>, <a href="#">Twitter</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rohan Jagirdar, All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function openTab(tabId) {
+            var tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            document.getElementById(tabId).classList.add('active');
+        }
+
+        // Set the first tab as default
+        document.getElementById('home').classList.add('active');
+    </script>
+</body>
+</html>

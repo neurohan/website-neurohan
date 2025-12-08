@@ -1,0 +1,26 @@
+{
+    "news": [
+        {
+            "date": "February 23, 2025",
+            "title": "New Insights into Alzheimer’s Disease Detection with Blood Biomarkers",
+            "link": "https://jamanetwork.com/journals/jamaneurology/fullarticle/2830013"
+        },
+        {
+            "date": "February 27, 2025",
+            "title": "Eli Lilly's $27 Billion U.S. Investment: A Game Changer?",
+            "link": "https://www.msn.com/en-us/money/general/zepbound-maker-eli-lilly-announces-27-billion-investment-in-us-drug-manufacturing-as-trump-threatens-tariffs/ar-AA1zPKTc?ocid=BingNewsVerp"
+        }
+    ],
+    "blog": [
+        {
+            "date": "March 1, 2025",
+            "title": "Exploring the Gut-Brain Connection",
+            "link": "blog1.html"
+        },
+        {
+            "date": "February 20, 2025",
+            "title": "Career Transition from Academia to Medical Affairs",
+            "link": "blog2.html"
+        }
+    ]
+}
