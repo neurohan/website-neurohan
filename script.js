@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQmNXJBZ1p2VBfNAUR57-GWFQJWP_f4xO0erZCNBq44pMsci0Vb9Cms4m_wiIqUD0WVALw35mo5W2bH/pub?output=csv";
+    const sheetURL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQmNXJBZ1p2VBfNAUR57-GWFQJWP_f4xO0erZCNBq44pMsci0Vb9Cms4m_wiIqUD0WVALw35mo5W2bH/pub?output=tsv";
 
     fetch(sheetURL)
         .then(response => response.text())
@@ -46,6 +46,7 @@ function displayContent(sectionId, items, containerId) {
         container.appendChild(div);
     });
 }
+
 
 
 
