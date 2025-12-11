@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neuroscience & Research - [Rohan Jagirdar, Ph.D.]</title>
+    <title>Neuroscience & Research - Rohan Jagirdar, Ph.D.</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -73,7 +73,7 @@
         <h1>Rohan Jagirdar, Ph.D.</h1>
         <p>Bridging Neuroscience, Medicine, and Public Education</p>
     </header>
-    
+
     <nav>
         <button onclick="openTab('home')">Home</button>
         <button onclick="openTab('news')">Research News</button>
@@ -88,25 +88,25 @@
         <h2>Welcome to My Website</h2>
         <p>Explore the latest in neuroscience, my published works, and fun resources for kids!</p>
     </section>
-    
+
     <section id="news" class="tab-content">
-    	<h2>Latest Research News</h2>
-    	<div id="news">Loading...</div>
+        <h2>Latest Research News</h2>
+        <div>Loading...</div>
     </section>
 
     <section id="articles" class="tab-content">
         <h2>Articles & Publications</h2>
-        <p>Browse my peer-reviewed papers, opinion pieces, and industry insights.</p>
+        <div>Loading...</div>
     </section>
 
     <section id="blog" class="tab-content">
-    	<h2>Blog</h2>
-    	<div id="blog">Loading...</div>
+        <h2>Blog</h2>
+        <div>Loading...</div>
     </section>
 
     <section id="kids" class="tab-content">
         <h2>Neuroscience for Kids</h2>
-        <p>Fun activities, brain facts, and interactive learning for young minds.</p>
+        <div>Loading...</div>
     </section>
 
     <section id="about" class="tab-content">
@@ -120,28 +120,17 @@
         <p>Socials: <a href="#">LinkedIn</a>, <a href="#">Twitter</a></p>
     </section>
 
-    <script>
-        function openTab(tabId) {
-            var tabs = document.querySelectorAll('.tab-content');
-            tabs.forEach(tab => {
-                tab.classList.remove('active');
-            });
-
-            document.getElementById(tabId).classList.add('active');
-        }
-
-        // Set the first tab as default
-        document.getElementById('home').classList.add('active');
-    </script>
-<script src="script.js"></script>    
     <footer>
         <p>&copy; 2025 Rohan Jagirdar, All Rights Reserved.</p>
     </footer>
 
+    <script>
+        function openTab(tabId) {
+            var tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
