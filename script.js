@@ -18,14 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 let entry = { title, link, date };
 
-                if (category === "research news") {
+                if (category === "news") {
                     newsItems.push(entry);
                 } else if (category === "blog") {
                     blogItems.push(entry);
                 }
             });
 
-            displayContent("research news", newsItems, "research news");
+            displayContent("news", newsItems, "news");
             displayContent("blog", blogItems, "blog");
         })
         .catch(error => console.error("Error loading sheet:", error));
@@ -46,4 +46,5 @@ function displayContent(sectionId, items, containerId) {
         container.appendChild(div);
     });
 }
+
 
